@@ -26,48 +26,28 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+The project will:
+- Authorization / Registration
+- Authorization check on NextJS
+- Profile
+- Download files, delete files, output all files
+- Navigation: Files, Photos, Trash.
+- Creating your own decorators in NestJS
+- Back end documentation with Swagger
+- Working with PostgreSQL + TypeORM database
 
-```bash
-$ npm install
-```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Frontend:
+- NextJS 13
+- TypeScript
+- SCSS
+- Ant Design
+- Nookies
+- Axios
+Backend:
+- NestJS
+- TypeScript
+- TypeORM + PostgreSQ L
+- Swagger
+- Multer
+- PassportJS + JWT
