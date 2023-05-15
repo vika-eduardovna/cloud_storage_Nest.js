@@ -24,8 +24,6 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
 The project will:
 - Authorization / Registration
 - Authorization check on NextJS
@@ -44,6 +42,8 @@ Frontend:
 - Ant Design
 - Nookies
 - Axios
+
+
 Backend:
 - NestJS
 - TypeScript
