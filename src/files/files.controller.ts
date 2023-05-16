@@ -1,6 +1,6 @@
 import {
   Controller, UploadedFile, ParseFilePipe,
-  MaxFileSizeValidator, Post, Body, Patch, Param, Delete
+  MaxFileSizeValidator, Post, Get, Body, Patch, Param, Delete
 } from '@nestjs/common';
 import { FilesService } from './files.service';
 import { CreateFileDto } from './dto/create-file.dto';
@@ -11,12 +11,15 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { fileStorage } from './storage';
 
 
-
-
 @Controller('files')
 @ApiTags('files')
 export class FilesController {
   constructor(private readonly filesService: FilesService) { }
+
+  @Get()
+    findAll() {
+      return this.filesService.findAll();
+    }
 
   @Post()
   @UseInterceptors(FileInterceptor('file', {
