@@ -4,17 +4,19 @@ import { UsersModule } from './users/users.module';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { FilesModule } from './files/files.module';
+import { UserEntity } from './users/entities/user.entity';
+import { FileEntity } from './files/entities/file.entity';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'balarama.db.elephantsql.com',
-      port: 3306,
+      port: 5432,
       username: 'vtdrniub',
-      password: '0EkRfOaCjFbcZfF4EH1gKoF-cPG7FWvk',
+      password: 'dDlq4nkLOjgDWkYQubzJksNf7402WwQw',
       database: 'vtdrniub',
-      entities: [],
+      entities: [UserEntity, FileEntity],
       synchronize: true,
     }), UsersModule, FilesModule],
   controllers: [AppController],
